@@ -24,10 +24,11 @@ class Cat {
   }
 }
 
+// usage
 const factory = new PetFactory()
 
-const volt = factory.createPet('dog')
-const garfield = factory.createPet('cat')
+const doggy = factory.createPet('dog')
+const kitty = factory.createPet('cat')
 
-console.log(volt.getDetails())
-console.log(garfield.getDetails())
+console.log(doggy.getDetails())
+console.log(kitty.getDetails())

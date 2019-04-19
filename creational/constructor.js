@@ -1,27 +1,28 @@
 // es5
-function OldHero (name, specialAbility) {
+function OldHero (name, ability) {
   this.name = name
-  this.specialAbility = specialAbility
+  this.ability = ability
 
   // declaring a method on the object
   this.getDetails = function () {
-    return this.name + ' can ' + this.specialAbility
+    return this.name + ' can ' + this.ability
   }
 }
 
 // es6
 class Hero {
-  constructor(name, specialAbility) {
+  constructor(name, ability) {
     this._name = name
-    this._specialAbility = specialAbility
+    this._ability = ability
 
     // declaring a method on the object
     this.getDetails = function () {
-      return `${this._name} can ${this._specialAbility}`
+      return `${this._name} can ${this._ability}`
     }
   }
 }
 
+// usage
 const ironMan = new OldHero('Superman', 'fly')
 const hulk = new Hero('Hulk', 'grow')
 

@@ -10,7 +10,7 @@ const car = {
 
 const ownedCar = Object.create(car, {
   owner: {
-    value: 'Mr. Somebody',
+    value: 'me',
     enumerable: true
   }
 })

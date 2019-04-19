@@ -18,6 +18,7 @@ class Database {
   }
 }
 
+// usage
 const mongo = new Database('mongo')
 console.log(mongo.getData()) // mongo
 
