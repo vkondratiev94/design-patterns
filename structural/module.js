@@ -1,4 +1,4 @@
-const module = (function() {
+const m = (function() {
   const privateVariable = 'privateVariable'
 
   function privateMethod() {
@@ -10,6 +10,6 @@ const module = (function() {
       return privateMethod()
     }
   }
-})()
+}())
 
-module.publicMethod()
+console.log(m.publicMethod())
